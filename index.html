@@ -3,12 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ferran</title>
-  <link rel="stylesheet" href="styles/overlay.css">
+  <meta name="description" content="This page provides an introduction of Silvia Ferran. It was built for the purpose of completing the assignment to practice and implement recent lessons on CSS and Java implementations for the course WDD 131">
+  <meta name="author" content="Silvia Ferran">
+  <title> WDD 131 - Dynamic Web Fundamentals - Silvia Ferran </title>
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="getdates.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>WDD131 FERRAN </h1>
-  </main>
+    <header>
+      <h1>WDD 131: Dynamic Web Fundamentals - Silvia Ferran</h1>
+      <section class="navigation">
+        <nav>
+            <ul class="nav-list">   
+                <li><a href="https://www.linkedin.com/in/silvia-ferran-0ba8677a/">LinkeIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/41?lang=eng&id=p14-p15#p14">Scriptures</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </section>
+    </header>
+    <main class="container">
+      <div class="row">
+        <section class="card about-me">
+          <h2>About Me</h2>
+          <div class="me">
+            <div class="text">   
+              <p>
+                Hello everyone! My name is Silvia Ferran. I am originally from Colombia and hold a bachelor's degree in Economics. 
+                Currently, I am pursuing a career in software development. I live in Orlando, Florida, where I enjoy spending time with my family.
+                Between my studies and homeschooling my daughter, my days are full of meaningful activities. 
+                As a family, we love spending time together, especially enjoying Disney and visiting relatives.
+              </p>
+            </div>
+            <div class="image1">
+              <img src="images/profile.webp" alt="Silvia's profile picture">
+            </div>
+          </div>
+          <h3>Colombia</h3>
+          <div class="country">  
+            <div class="image2">
+              <img src="images/colombian_flag.png" alt="Colombia's flag">
+            </div>
+            <div class="text">
+              <p>
+                Colombia is a country primarily located in South America with insular regions in North America.
+                It covers an area of 1,141,748 square kilometers (440,831 sq mi) and has a population of around 52 million. 
+                Its rich cultural heritage including language, religion, cuisine, and art—reflects its history as a colony, 
+                fusing cultural elements brought by immigration from Europe and the Middle  East, with those brought
+                by the African, as well as with those of the various Indigenous civilizations that predate colonization.
+                Spanish is the official language, although Creole, English and 64 other languages are recognized regionally. 
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="card web-dev-resources">
+          <aside>
+            <h2>Web Dev Resources</h2>
+            <ul>
+              <li><a href="https://wordpress.org/">Word Press</a></li>
+              <li><a href="https://www.mamp.info/en/mac/">MAMP</a></li>
+              <li><a href="https://git-scm.com/">Git</a></li>
+              <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+              <li><a href="https://jquery.com/">jQuery</a></li>
+              <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+              
+            </ul>
+          </aside>
+        </section>
+    </main>
+    <footer class=foot>
+      <p>
+        ©2025 <span id="current-year">😊</span> Silvia Ferran <span>😊</span> Colombia
+      </p>
+      <p class="last-modified"></p>
+    </footer>
+  
 </body>
 </html>
