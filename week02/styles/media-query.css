@@ -1,0 +1,32 @@
+body{
+    font-style:"Roboto", serif;
+    width: 640px;
+    margin: 1rem auto;
+}
+
+header{
+    border: 1px solid rgb(164, 118, 164);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: plum;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+section{
+    border: 15px solid rgb(164, 118, 164);
+    padding: 10px;
+}
+footer{
+    border: 1px solid plum;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: plum;
+}
