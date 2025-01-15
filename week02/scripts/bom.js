@@ -1,7 +1,7 @@
 // declare three (3) variables that hold references to the input, button, and list elements
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('chapList');
+const list = document.querySelector('#chapList');
 
 // Create a click event listener for the Add Chapter button using an addEventListener.
 buttonElement.addEventListener('click', function() {
@@ -13,7 +13,7 @@ buttonElement.addEventListener('click', function() {
         const deleteButton = document.createElement('button');
         deleteButton.textContent = '❎';           //Populate the button textContent with a ❌
         li.append(deleteButton);                   // Append the li element variable with the delete button
-        li.append(li);                             //Append the li element variable to the unordered list in your HTML.
+        list.appendChild(li);                        //Append the li element variable to the unordered list in your HTML.
 
         deleteButton.addEventListener('click', function () {        //Add an event listener to the delete button
             list.removeChild(li);                                   // Remove the <li> when clicked.
