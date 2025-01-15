@@ -4,7 +4,7 @@ const button = document.querySelector('button');
 const list = document.querySelector('#chapList');
 
 // Create a click event listener for the Add Chapter button using an addEventListener.
-buttonElement.addEventListener('click', function() {
+button.addEventListener('click', function() {
     if (input.value.trim() !== '') {                 //using an if block, otherwise provide a message or at least do nothing and return the .focus() to the input field.
         const li = document.createElement('li');    // Create a li element that will hold each entries chapter title and an associated delete button
         li.textContent = input.value;               //Populate the li element variable's textContent or innerHTML with the input value.
