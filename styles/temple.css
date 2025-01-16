@@ -35,6 +35,18 @@ h1 {
     margin-left: auto;
 }
 
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.open a {
+	display: block;
+}
+
 
 .navigation {
     display: none; 
