@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Grotesk", serif;
+}
+
+
+header {
+    background-color: rgb(115, 38, 119);
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#menu {
+    display: block; 
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
+.navigation {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(115, 38, 119);
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+.navigation.open {
+    display: flex; 
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.navigation li {
+    text-align: center;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.navigation a:hover {
+    color: #ccc;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+}
+
+figure img {
+    height: 200px; 
+}
+
+
+footer {
+    font-size: 16px;
+    padding: 15px;
+}
