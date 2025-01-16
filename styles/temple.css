@@ -43,11 +43,6 @@ h1 {
 	content: "❌";
 }
 
-.open a {
-	display: block;
-}
-
-
 .navigation {
     display: none; 
     flex-direction: column;
