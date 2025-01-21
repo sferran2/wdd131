@@ -16,6 +16,10 @@ header {
     align-items: center;
 }
 
+.button{
+    background-color:rgb(115, 38, 119) ;
+}
+
 h1{
     font-size: 24px;
     margin: 0;
