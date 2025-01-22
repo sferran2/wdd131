@@ -90,9 +90,10 @@ body {
     text-align: center;
     padding: var(--padding);
     background-color: #ee0505;
-    border-top: 10px solid #2e05f9;
-    color: white;
+    color: whitesmoke;
+    font-style: italic;
     font-size: 25px;
+    border-top: 10px solid #2e05f9;;
 }
 
 .last-modified{

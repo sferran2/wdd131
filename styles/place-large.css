@@ -5,7 +5,6 @@
   }
 
   :root{
-    border-bottom: 10px solid #2e05f9;
     font-size: 20px;
     padding: 10px;
   }
@@ -28,7 +27,7 @@
     text-align: center;
     padding: 20px;
     background-color:rgb(222, 222, 19);
-    border-bottom: var(--border-bottom);
+    border-bottom: 10px solid #2e05f9;
     font-size: 30px;
     color:#2e05f9
   }
@@ -59,7 +58,7 @@
     width: 30%;
     padding: var(--padding);
     background-color: rgba(255, 255, 255, 0.8);
-    border-bottom: var(--border-bottom);
+    border:10px solid #2e05f9;
     border-radius: 15px;
   }
 
@@ -130,7 +129,7 @@
     text-align: center;
     padding: 10px;
     background-color: #ee0505;
-    border-bottom: var(--border-bottom);
+    border-top: 10px solid #2e05f9;
     color: white;
     font-size: var(--font-size);
 
