@@ -34,9 +34,9 @@
   }
   
   .image-section {
-    flex-grow: 1; /* Ensures it grows to fill remaining space */
+    flex-grow: 1; 
     width: 100%;
-    background-image: url('/images/hero-large-colombia.webp'); /* Replace with your image URL */
+    background-image: url('../images/hero-large-colombia.webp'); 
     background-size: cover;
     background-position: center;
     justify-content: space-between;
@@ -60,8 +60,8 @@
   .data-section h2, .weather-section h2{
     text-align: center;
     padding: 10px;
-    background-color: #3790ea;
-    color: white;
+    background-color: #b5d4f3;
+    color: navy;
   }
 
   .data-section {
@@ -117,7 +117,7 @@
   }
 
   .last-modified{
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
     color: white;
 }
