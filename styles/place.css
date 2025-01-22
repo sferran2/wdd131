@@ -89,8 +89,8 @@ body {
 .footer {
     text-align: center;
     padding: var(--padding);
-    background-color: #ee0505;
-    color: black;
+    background-color:#b22222;;
+    color: #ffffff;
     font-style: italic;
     font-size: 25px;
     border-top: 10px solid #2e05f9;;
@@ -99,7 +99,7 @@ body {
 .last-modified{
     font-size: 20px;
     padding: var(--padding);
-    color: black;
+    color: #ffffff;
 }
 
 

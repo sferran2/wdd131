@@ -128,9 +128,9 @@
   .footer {
     text-align: center;
     padding: 10px;
-    background-color: #ee0505;
+    background-color: #b22222;
     border-top: 10px solid #2e05f9;
-    color: black;
+    color: #ffffff;
     font-size: 25px;
 
   }
@@ -138,7 +138,7 @@
   .last-modified{
     font-size: 25px;
     padding: var(--padding);
-    color:black;
+    color:#ffffff;
 }
 @media (min-width: 769px) {
     body {
