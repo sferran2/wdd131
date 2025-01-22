@@ -138,7 +138,7 @@
   .last-modified{
     font-size: var(--font-size);
     padding: var(--padding);
-    color: white;
+    color:black;
 }
 @media (min-width: 769px) {
     body {
