@@ -81,6 +81,10 @@ body {
     padding: 2px;
   }
 
+  .data-section img, .weather-section img{
+    display: none;
+  }
+
 /* Footer */
 .footer {
     text-align: center;
