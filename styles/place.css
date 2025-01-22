@@ -1,98 +1,132 @@
-@media screen and (max-width: 768px) 
-{
-    body {
-        font-size: 14px;
-        padding: 0;
-        margin: 0;
-    }
+/* Base styles for mobile */
+body {
+    font-family:"Space Grotesk", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 
-    header {
-        padding: 20px;
-        height: auto;
-        width: 100%; 
-        margin: 0; 
-    }
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    h1 {
-        font-size: 30px; 
-        margin-top: 10px; 
-    }
+/* Title Section */
+.title {
+    text-align: center;
+    padding: 20px;
+    background-color:rgb(222, 222, 19);
+    border-bottom: 10px solid #2e05f9;
+    font-size: 30px;
+    color:#2e05f9
+}
 
+/* Mobile Content Layout */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Stacks sections vertically */
+    padding: 10px;
+    gap: 10px;
+}
 
-    .container {
-        display: flex; 
+/* Image Section */
+.image-section {
+    width: 100%;
+    height: auto;
+    text-align: center; /* Center-align the image */
+    padding: 10px 0;
+}
+
+.image-section img {
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Data Section */
+.data-section {
+    padding: 10px;
+    margin: 10px 0; /* Adds space between sections */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 10px solid #2e05f9;
+    border-radius: 15px;
+}
+
+/* Weather Section */
+.weather-section {
+    padding: 10px;
+    margin: 10px 0; /* Adds space between sections */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 10px solid #2e05f9;
+    border-radius: 15px;
+}
+
+.data-section h2, .weather-section h2{
+    text-align: center;
+    padding: 10px;
+    background-color: #3790ea;
+    color: white;
+  }
+  .weather-section h2::after {
+    content: '\2601';
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 15px;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.data-section h2::after {
+    content: '\1F1E8\1F1F4';
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 15px;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.data-section ol, .weather-section ol{
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px; 
+  }
+
+  .data-section li, .weather-section li{
+    padding: 2px;
+  }
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ee0505;
+    border-top: 10px solid #2e05f9;
+    color: white;
+    font-size: 25px;
+}
+
+.last-modified{
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    /* Stacks content vertically for small screens */
+    .main-content {
         flex-direction: column;
-        align-items: center; 
-        padding: 10px;
-        margin: 0;
-        width: 100%; 
     }
 
-    .container::before {
-        width: 100%; 
-        height: 300px; 
-    }
-
-    .data-section,
-    .weather-section {
-        width: 90%; 
-        margin: 10px auto;
-        padding: 15px; 
-    }
-
-    .data-section h3,
-    .weather-section h3 {
-        font-size: 20px; 
-        padding: 8px;
-        margin: 0 auto; 
-        width: calc(100% + 30px); 
-    }
-
-    .data-section ol,
-    .weather-section ol {
-        padding: 0;
-        margin: 10px 0;
-    }
-
-    .data-section li,
-    .weather-section li {
-        font-size: 16px; 
-        margin: 5px 0; 
-    }
-
-    /* Weather Icon */
-    .weather-section h3::after {
-        font-size: 25px; 
-        right: 5px; 
-    }
-
-    .data-section h3::after {
-        font-size: 25px; 
-        right: 5px;
-    }
-
-
-    .image {
-        width: 100%; 
-        margin: 10px auto; 
-    }
-
-    .image img {
-        display: block; 
-        width: 100%;
+    .image-section {
         height: auto;
     }
 
-
-    footer {
-        width: 100%;
-        padding: 1rem;
-        font-size: 16px; 
-        height: auto; 
-        margin: 0;
-    }
-
-    .last-modified {
-        font-size: 12px; 
+    .image-section img {
+        width: 100%; /* Ensure the image fills the screen width */
     }
 }

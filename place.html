@@ -1,57 +1,60 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A vibrant website about Colombia, featuring general information, a stunning picture, and up-to-date weather details, offering a captivating glimpse into the country's beauty and diversity.">
+    <meta name="description" content="Explore data and weather conditions in Colombia my birthcountry.">
     <meta name="author" content="Silvia Ferran">
-    <title> WDD 131 - Colombia - Silvia Ferran </title>
-    <link rel="stylesheet" href="styles/place-large.css">
+    <title> WDD 131 - COLOMBIA - Silvia Ferran </title>
     <link rel="stylesheet" href="styles/place.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 769px)">
     <script src="scripts/place.js" defer></script>
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
+    <div class="container">
+      <header class="title">
         <h1>COLOMBIA</h1>
-    </header>
-    <section class="container">
-        <div class="data-section">
-            <h3>Data</h3>
-            <ol>
-                <li>Area: 1,141,748 sq Km </li>
-                <li>Population: 52.695.952 </li>
-                <li>Capital: Bogota </li>
-                <li>Language: Spanish </li>
-                <li>Currency: Colombian Peso </li>
-                <li>Time Zone:GMT-5 </li>
-                <li>Calling Code: +57 </li>
-                <li>Internet TLD: .co </li>
-            </ol>
-        </div>
-        <picture class="image">
-            <source media="(min-width:1000px)" srcset="images/colombia-large.webp">
-            <img src="images/colombia.webp" alt="Cocora valley colombia image">
-        </picture>
-        <div class="weather-section">
-            <h3>Weather</h3>
-            <ol>
-                <li>Temperature: 10°C</li>
-                <li>Conditions: Clear </li>
-                <li>Wind: 6 km/h </li>
-            </ol>
-        </div>
-    </section>
-    <footer>
+      </header>
+      <main class="main-content">
+        <section class="image-section">
+          <picture>
+            <source srcset="images/hero-large-colombia.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium-colombia.webp" media="(min-width: 550px)">
+            <img src="images/hero-small-colombia.webp" alt="Cocora Valley" class="responsive-image" width="400" height="200">
+          </picture>
+        </section>
+        <section class="data-section">
+          <h2>Data</h2>
+          <ol>
+            <li>Area: 1.141,748 sq Km </li>
+            <li>Population: 53 million</li>
+            <li>Capital: Bogota</li>
+            <li>Language: Spanish</li>
+            <li>Currency: Colombian Pesos</li>
+            <li>Time Zone: GMT-5</li>
+            <li>Calling Code: +57</li>
+            <li>Internet TDL: .co</li>
+          </ol>
+          </aside>
+        </section>
+        <section class="weather-section">
+          <h2>Weather</h2>
+          <ol>
+            <li>Temperatura: 20°C</li>
+            <li>Conditions: Mostly Sunny</li>
+            <li>Wind: 11 km/hr </li>
+          </ol>
+        </section>
+      </main>
+      <footer class="footer">
         <p>
-            ©<span id="current-year">ツ</span> ツ Silvia Ferran <span>ツ</span> Colombia
+            ©<span id="current-year">🏫</span> Silvia Ferran <span>🏫</span> Colombia
         </p>
-        <p class="last-modified"></p>
-    </footer>
-</body>
-
-</html>
+        <p class="last-modified"></p>        
+      </footer>
+    </div>
+  </body>
+  </html>
