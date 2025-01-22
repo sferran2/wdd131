@@ -1,10 +1,15 @@
 
 body {
-    font-family:"Space Grotesk", serif;
+    font-family:"Roboto", serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
+
+ :root{
+    font-size: 20px;
+    padding: 10px;
+  }
 
 .container {
     display: flex;
@@ -24,7 +29,7 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: var(--padding);
     gap: 10px;
 }
 
@@ -43,7 +48,7 @@ body {
 }
 
 .data-section {
-    padding: 10px;
+    padding: var(--padding);
     margin: 10px 0;
     background-color: rgba(255, 255, 255, 0.8);
     border: 10px solid #2e05f9;
@@ -52,7 +57,7 @@ body {
 
 
 .weather-section {
-    padding: 10px;
+    padding: var(--padding);
     margin: 10px 0; 
     background-color: rgba(255, 255, 255, 0.8);
     border: 10px solid #2e05f9;
@@ -61,29 +66,10 @@ body {
 
 .data-section h2, .weather-section h2{
     text-align: center;
-    padding: 10px;
+    padding: var(--padding);
     background-color: #b5d4f3;
     color: navy;
   }
-  .weather-section h2::after {
-    content: '\2601';
-    font-size: 60px;
-    color: white;
-    position: relative;
-    top: 15px;
-    left: 20px;
-    transform: translateY(-50%);
-}
-
-.data-section h2::after {
-    content: '\1F1E8\1F1F4';
-    font-size: 60px;
-    color: white;
-    position: relative;
-    top: 15px;
-    left: 20px;
-    transform: translateY(-50%);
-}
 
 .data-section ol, .weather-section ol{
     text-align: center;
@@ -98,7 +84,7 @@ body {
 /* Footer */
 .footer {
     text-align: center;
-    padding: 10px;
+    padding: var(--padding);
     background-color: #ee0505;
     border-top: 10px solid #2e05f9;
     color: white;
@@ -106,8 +92,8 @@ body {
 }
 
 .last-modified{
-    font-size: 15px;
-    padding: 10px;
+    font-size: 20px;
+    padding: var(--padding);
     color: white;
 }
 
