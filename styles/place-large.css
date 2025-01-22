@@ -92,7 +92,7 @@
     right: 40px;
   }
 
-  .weather-section h2::after {
+.weather-section h2::after {
     content: ''; 
     display: inline-block;
     width: 60px;
@@ -105,6 +105,10 @@
     top: 45px;
     left: 20px;
     transform: translateY(-50%);
+}
+
+.data-section img, .weather-section img{
+    display: none;
 }
 
 .data-section h2::after {
