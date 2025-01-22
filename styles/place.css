@@ -1,0 +1,98 @@
+@media screen and (max-width: 768px) 
+{
+    body {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        padding: 20px;
+        height: auto;
+        width: 100%; 
+        margin: 0; 
+    }
+
+    h1 {
+        font-size: 30px; 
+        margin-top: 10px; 
+    }
+
+
+    .container {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px;
+        margin: 0;
+        width: 100%; 
+    }
+
+    .container::before {
+        width: 100%; 
+        height: 300px; 
+    }
+
+    .data-section,
+    .weather-section {
+        width: 90%; 
+        margin: 10px auto;
+        padding: 15px; 
+    }
+
+    .data-section h3,
+    .weather-section h3 {
+        font-size: 20px; 
+        padding: 8px;
+        margin: 0 auto; 
+        width: calc(100% + 30px); 
+    }
+
+    .data-section ol,
+    .weather-section ol {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .data-section li,
+    .weather-section li {
+        font-size: 16px; 
+        margin: 5px 0; 
+    }
+
+    /* Weather Icon */
+    .weather-section h3::after {
+        font-size: 25px; 
+        right: 5px; 
+    }
+
+    .data-section h3::after {
+        font-size: 25px; 
+        right: 5px;
+    }
+
+
+    .image {
+        width: 100%; 
+        margin: 10px auto; 
+    }
+
+    .image img {
+        display: block; 
+        width: 100%;
+        height: auto;
+    }
+
+
+    footer {
+        width: 100%;
+        padding: 1rem;
+        font-size: 16px; 
+        height: auto; 
+        margin: 0;
+    }
+
+    .last-modified {
+        font-size: 12px; 
+    }
+}

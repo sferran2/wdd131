@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A vibrant website about Colombia, featuring general information, a stunning picture, and up-to-date weather details, offering a captivating glimpse into the country's beauty and diversity.">
+    <meta name="author" content="Silvia Ferran">
+    <title> WDD 131 - Colombia - Silvia Ferran </title>
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css" media="(max-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <h1>COLOMBIA</h1>
+    </header>
+    <section class="container">
+        <div class="data-section">
+            <h3>Data</h3>
+            <ol>
+                <li>Area: 1,141,748 sq Km </li>
+                <li>Population: 52.695.952 </li>
+                <li>Capital: Bogota </li>
+                <li>Language: Spanish </li>
+                <li>Currency: Colombian Peso </li>
+                <li>Time Zone:GMT-5 </li>
+                <li>Calling Code: +57 </li>
+                <li>Internet TLD: .co </li>
+            </ol>
+        </div>
+        <picture class="image">
+            <source media="(min-width:1000px)" srcset="images/colombia-large.webp">
+            <img src="images/colombia.webp" alt="Cocora valley colombia image">
+        </picture>
+        <div class="weather-section">
+            <h3>Weather</h3>
+            <ol>
+                <li>Temperature: 10°C</li>
+                <li>Conditions: Clear </li>
+                <li>Wind: 6 km/h </li>
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <p>
+            ©<span id="current-year">ツ</span> ツ Silvia Ferran <span>ツ</span> Colombia
+        </p>
+        <p class="last-modified"></p>
+    </footer>
+</body>
+
+</html>
