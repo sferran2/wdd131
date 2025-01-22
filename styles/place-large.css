@@ -131,12 +131,12 @@
     background-color: #ee0505;
     border-top: 10px solid #2e05f9;
     color: black;
-    font-size: var(--font-size);
+    font-size: 25px;
 
   }
 
   .last-modified{
-    font-size: var(--font-size);
+    font-size: 25px;
     padding: var(--padding);
     color:black;
 }
