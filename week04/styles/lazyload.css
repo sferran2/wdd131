@@ -1,0 +1,42 @@
+
+body {
+    font-family:"Space Grotesk", serif;
+  }
+
+header {
+    color: rgb(115, 38, 119);
+    padding: 20px;
+}
+
+main{
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    color: rgb(6, 84, 58);
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+    background: black;
+    align-items: center;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer p{
+    align-items: center;
+    color: rgb(115, 38, 119);
+}

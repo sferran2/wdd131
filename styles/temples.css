@@ -27,12 +27,17 @@ h1 {
 
 #menu {
     display: block; 
-    font-size: 24px;
+    font-size: 44px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
     margin-left: auto;
+}
+
+button{
+    background-color: aliceblue;
+    color: ;
 }
 
 #menu::before {
