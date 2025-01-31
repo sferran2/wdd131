@@ -11,9 +11,9 @@ body {
 
 
 header {
-    background-color: rgb(115, 38, 119);
+    background-color: rgb(175, 175, 236);
     padding: 15px 20px;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
@@ -30,14 +30,14 @@ h1 {
     font-size: 44px;
     background: none;
     border: none;
-    color: white;
+    color: black;
     cursor: pointer;
     margin-left: auto;
 }
 
 button{
-    background-color: aliceblue;
-    color: ;
+    background-color: rgb(175, 175, 236);
+    color:black;
 }
 
 #menu::before {
@@ -52,7 +52,7 @@ button{
     display: none; 
     flex-direction: column;
     width: 100%;
-    background-color: rgb(115, 38, 119);
+    background-color:rgb(175, 175, 236);
     padding: 10px 0;
     border-radius: 8px;
 }
@@ -75,7 +75,7 @@ button{
 }
 
 .navigation a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 16px;
     padding: 10px 0;
