@@ -88,6 +88,13 @@ button{
     color: #ccc;
 }
 
+h2{
+    color: black;
+    font-size: 32px;
+    text-align: center;
+    padding: 30px; 
+ }
+
 .container {
     grid-template-columns: repeat(1, 1fr); 
     margin: 1rem; 
