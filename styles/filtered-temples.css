@@ -6,12 +6,12 @@
 }
 
 body {
-    font-family: "Space Grotesk", serif;
+    font-family: Arial, sans-serif;
 }
 
 
 header {
-    background-color: rgb(175, 175, 236);
+    background-color: #96b4f0;
     padding: 15px 20px;
     color: black;
     display: flex;
@@ -20,13 +20,16 @@ header {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
+    padding: 20px;
+    margin-bottom: 10px;
+ 
 }
 
 #menu {
     display: block; 
-    font-size: 44px;
+    font-size: 30px;
     background: none;
     border: none;
     color: black;
@@ -35,7 +38,7 @@ h1 {
 }
 
 button{
-    background-color: rgb(175, 175, 236);
+    background-color: #96b4f0;
     color:black;
 }
 
@@ -51,7 +54,7 @@ button{
     display: none; 
     flex-direction: column;
     width: 100%;
-    background-color:rgb(175, 175, 236);
+    background-color: #96b4f0;
     padding: 10px 0;
     border-radius: 8px;
 }
@@ -85,14 +88,23 @@ button{
     color: #ccc;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 15px;
+.container {
+    grid-template-columns: repeat(1, 1fr); 
+    margin: 1rem; 
 }
 
-figure img {
-    height: 200px; 
+.temples-container {
+    gap: 1rem; 
+    margin: 1rem;
+}
+
+.temple-card {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.temple-card img {
+    height: auto;
 }
 
 
