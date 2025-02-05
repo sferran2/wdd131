@@ -26,6 +26,17 @@ h2 {
     text-align: start;
     background-color: beige;
 }
+h3{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(156, 142, 237);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 
 ol li {
     padding: 10px;
@@ -45,7 +56,17 @@ img {
     
 }
 
+.mobile{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 300px;
+    margin-left: 550px;
+}
+
 footer{
     background-color: rgb(221, 249, 164);
     padding: 10px;
+
 }
