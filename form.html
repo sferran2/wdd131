@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="In-depth product reviews with honest insights, pros & cons.">
+        <meta name="author" content="Silvia Ferran">
+        <title> WDD 131 - Form - Silvia Ferran </title>
+        <link rel="stylesheet" href="styles/form-large.css">
+        <link rel="stylesheet" href="styles/form.css" media="(max-width: 768px)">
+        <script src="scripts/form.js" defer></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="logo-container1">
+                <img src="images/logo_review.webp" alt=" Company Logo" class="logo1">
+                <h1>Product Review</h1>
+            </div>
+            <form method="get" action="review.html" class="fpr1">
+                <fieldset>
+                    <legend>Review Form</legend>
+                    <label>Product Name</label>
+                        <select  id="product-category" name="products" required>
+                            <option value="" disabled selected>Select a product... &#9662;</option>
+                        </select>
+                    <div>
+                        <section class="raiting">
+                            <h3>Overall Rating</h3>
+                            <input type="radio" id="star1" name="rating" value="1" required>
+                            <label for="star1">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733 &#9733</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">&#9733 &#9733 &#9733</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733 &#9733 &#9733 &#9733 </label>
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733 &#9733 &#9733 &#9733 &#9733</label>
+                        </section>
+                    </div>
+                    <div class="date">
+                    <label>Date of Installation</label>
+                    <input type="date" id="installation-date" name="installation_date" required>
+                    </div>
+                    <div>
+                    <label>Which features did you find useful in the product</label>
+                    <label><input type="checkbox" name="durability" value="yes"> Durability</label> 
+                    <label><input type="checkbox" name="code" value="yes"> Ease of Use</label> 
+                    <label><input type="checkbox" name="process" value="yes"> Performance</label> 
+                    <label><input type="checkbox" name="client" value="yes"> Design</label> 
+                    </div>
+                    <div>
+                        <label>Written Review (Optional)</label>
+                        <textarea id="written-review" name="written_review" rows="5" cols="50"></textarea>
+                    </div>
+                    <div>
+                        <label>Your Name (Optional)</label>
+                        <textarea id="written-name" name="written_name" rows="2" cols="50"></textarea>
+                    </div>
+                    <div>
+                    <input type="submit" value="Submit Rating!">
+                    </div>
+                </fieldset>        
+            </form>
+        </main>
+        <footer class="foot">
+            <p>
+                ©<span id="current-year"></span> Silvia Ferran <span></span> Colombia
+            </p>
+            <p class="last-modified"></p>
+        </footer>
+    </body>
+</html>
+

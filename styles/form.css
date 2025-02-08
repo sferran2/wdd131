@@ -1,0 +1,93 @@
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+        background-color: aliceblue;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(148, 216, 250, 0.77);
+    }
+
+    .logo {
+        max-height: 100px;
+        margin: 0 auto;
+    }
+
+    .logo-container1 {
+        flex-direction: column; /* Stack the logo and title vertically */
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .logo1 {
+        width: 80px; /* Smaller logo for mobile */
+        height: auto;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .fpr1 fieldset {
+        padding: 1rem;
+        margin: 1rem 0;
+        border: 2px solid rgb(244, 148, 14);
+        border-radius: 6px;
+    }
+
+    .fpr1 legend {
+        font-size: 1.2rem;
+        text-align: center;
+        color: rgb(69, 164, 89);
+    }
+
+    .fpr1 label {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    #product-category,
+    .date input,
+    textarea {
+        width: 100%; /* Full width for mobile */
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .raiting {
+        flex-direction: column; /* Stack stars vertically */
+        align-items: center;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .raiting label {
+        font-size: 1.5rem; /* Larger stars for mobile readability */
+        gap: 5px;
+    }
+
+    .fpr1 input[type="submit"] {
+        width: 100%; /* Full width for submit button */
+        padding: 1rem;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    footer.foot {
+        font-size: 0.9rem;
+        padding: 10px;
+        background-color: rgba(148, 216, 250, 0.77);
+        text-align: center;
+    }
+
+    footer p {
+        margin: 5px 0;
+    }
+}
+
