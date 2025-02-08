@@ -1,22 +1,51 @@
-const productArray = [
-    { name: "Guard Smart Security System" },
-    { name: "Solar Pro Panel Kit" },
-    { name: "Theater 360 Sound System" },
-    { name: "Cool HVAC System" },
-    { name: "Built-in Oven & Dishwasher" },
-    { name: "Pure Water Filtration System" },
-    { name: "Charge EV Station" },
-    { name: "Lock Smart Access System" }
-];
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("JavaScript loaded successfully!");
 
-const selectElement = document.getElementById("product-category");
+    const products = [
+        {
+            id: "fc-1888",
+            name: "Flux Capacitor",
+            averagerating: 4.5
+        },
+        {
+            id: "fc-2050",
+            name: "Power Laces",
+            averagerating: 4.7
+        },
+        {
+            id: "fs-1987",
+            name: "Time Circuits",
+            averagerating: 3.5
+        },
+        {
+            id: "ac-2000",
+            name: "Low Voltage Reactor",
+            averagerating: 3.9
+        },
+        {
+            id: "jj-1969",
+            name: "Warp Equalizer",
+            averagerating: 5.0
+        }
+    ];
 
-productArray.forEach(product => {
-    let option = document.createElement("option");
-    option.value = product.name;  
-    option.textContent = product.name; 
-    selectElement.appendChild(option);
+    const selectElement = document.getElementById("product-category");
+
+    if (selectElement) {
+        // Loop through each product and create an <option> element
+        products.forEach(product => {
+            let option = document.createElement("option");
+            option.value = product.id; // Store product ID as the value
+            option.textContent = product.name; // Display product name
+            selectElement.appendChild(option);
+        });
+
+        console.log("Product options populated successfully!");
+    } else {
+        console.warn("Warning: #product-category element is missing in this HTML file.");
+    }
 });
+
 
 const textarea = document.getElementById("written-review");
 
@@ -31,12 +60,5 @@ const currentDate = new Date();
 const formattedDate = currentDate.toLocaleString();
 document.querySelector('.last-modified').textContent = `Last Access: ${formattedDate}`;
 
-if (!localStorage.getItem("reviewCount")) {
-    localStorage.setItem("reviewCount", "1");
-}
 
-let reviewCount = parseInt(localStorage.getItem("reviewCount"));
-reviewCount++;
-localStorage.setItem("reviewCount", reviewCount);
 
-document.getElementById("review-counter").textContent = reviewCount;

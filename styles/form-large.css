@@ -86,6 +86,7 @@ h2 {
     flex-grow: 1;
     padding: 30px;
     color: rgb(4, 200, 95);
+    text-align: center;
 }
 
 p {
