@@ -51,7 +51,7 @@ header {
 
 .nav-list a {
     text-decoration: none;
-    color: rgb(47, 31, 1);
+    color: rgb(49, 33, 1);
     font-weight: bolder;
     font-size: 1.2rem;
     margin-left: 60px;
@@ -66,7 +66,7 @@ header {
 h1 {
     padding: 20px;
     font-weight: bolder;
-    color: rgb(145, 94, 1);
+    color: rgb(56, 37, 1);
 }
 
 .logo-container1 {
@@ -102,7 +102,7 @@ p {
 
 .fpr1 legend{
     font-size: 25px;
-    color: rgb(69, 164, 89);
+    color: rgb(17, 40, 22);
 }
 
 .fpr1 label {
