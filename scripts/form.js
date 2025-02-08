@@ -32,7 +32,7 @@ const formattedDate = currentDate.toLocaleString();
 document.querySelector('.last-modified').textContent = `Last Access: ${formattedDate}`;
 
 if (!localStorage.getItem("reviewCount")) {
-    localStorage.setItem("reviewCount", "0");
+    localStorage.setItem("reviewCount", "1");
 }
 
 let reviewCount = parseInt(localStorage.getItem("reviewCount"));
