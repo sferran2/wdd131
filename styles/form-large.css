@@ -150,7 +150,7 @@ h3{
     font-size: 1.2rem;
 }
 
-.date input, textarea {
+.date input, textarea, .name {
     width: 100%; 
     max-width: 400px; 
     padding: 10px;
