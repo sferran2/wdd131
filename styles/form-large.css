@@ -93,19 +93,6 @@ p {
     text-align: center;
 }
 
-.tf {
-    border: none;
-    background-image: linear-gradient(rgb(244, 192, 50), rgb(207, 157, 8));
-    color: black;
-    font-size: 15px;
-    border-radius: 6px;
-    padding: 10px;
-    max-width: 400px;
-    box-shadow: 1px 1px 4px rgb(174, 173, 173);
-    margin: 20px;
-    margin-left: 570px;
-}
-
 .fpr1 fieldset {
     margin: 2rem 0;
     border: 3px solid rgb(244, 148, 14);
