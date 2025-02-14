@@ -188,7 +188,6 @@ p {
 .sticky-note3 {
     width: 350px;
     background-color: #9bd6eb;
-    /* Light yellow */
     padding: 15px;
     margin: 20px auto;
     text-align: center;
@@ -203,17 +202,16 @@ p {
     padding: 20px;
 }
 
-.sticky-note3 button {
+.btn {
     border: none;
     background-image: linear-gradient(rgb(89, 147, 126), rgb(17, 103, 71));
     color: white;
     border-radius: 6px;
     padding: 20px;
-    width: 90%;
+    width: 100%;
     max-width: 250px;
     box-shadow: 1px 1px 4px rgb(174, 173, 173);
     font-size: 1.2rem;
-
 }
 
 .sticky-note::before {
