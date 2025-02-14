@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const taskListContainer = document.getElementById("task-list");
 
         if (!taskListContainer) {
-            console.error("Element with ID 'task-list' not found.");
+            // console.error("Element with ID 'task-list' not found.");
             return;
         }
 
