@@ -26,14 +26,6 @@ header {
     background-color: #ddd;
 }
 
-main h1 {
-    margin: 40px 0;
-    text-align: center;
-    padding: 30px;
-    color: #0d4e38;
-}
-
-
 nav {
     background-color: #64a08c;
     display: flex;
@@ -65,6 +57,14 @@ main {
     padding: 0 2%;
     min-height: 20rem;
 }
+
+main h1 {
+    margin: 40px 0;
+    text-align: center;
+    padding: 30px;
+    color: #0d4e38;
+}
+
 
 p {
     text-align: justify;
@@ -132,7 +132,10 @@ p {
 
 .date-number a{
     color: #041912;
+    font-weight: bold;
 }
+
+/* TASK LIST */
 
 .tasks-container a {
     display: block;
@@ -153,9 +156,8 @@ p {
     display: flex;
 }
 
-.sticky-note1 {
+.sticky-note1, .sticky-note2, .sticky-note3{
     width: 350px;
-    background-color: #f6f697;
     padding: 15px;
     margin: 20px auto;
     text-align: center;
@@ -166,45 +168,12 @@ p {
     position: relative;
 }
 
-.sticky-note1 p {
-    padding: 2px;
-}
-
-.sticky-note2 {
-    width: 350px;
-    background-color: #caeda3;
-    /* Light yellow */
-    padding: 15px;
-    margin: 20px auto;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-}
-
-.sticky-note2 p {
-    padding: 2px;
-}
-
-
-.sticky-note3 {
-    width: 350px;
-    background-color: #9bd6eb;
-    padding: 15px;
-    margin: 20px auto;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-}
-
-.sticky-note3 p {
-    padding: 20px;
-}
+.sticky-note1 {background-color: #f6f697;}
+.sticky-note1 p {padding: 2px;}
+.sticky-note2 {background-color: #caeda3;}
+.sticky-note2 p {padding: 2px;}
+.sticky-note3 {background-color: #9bd6eb;}
+.sticky-note3 p {padding: 20px;}
 
 .btn {
     border: none;
