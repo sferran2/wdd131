@@ -1,0 +1,196 @@
+/* Mobile Stylesheet */
+
+body {
+    font-size: 14px; 
+    line-height: 1.4;
+}
+
+
+header {
+    padding: 0.5rem 1%;
+    text-align: center;
+}
+
+.logo {
+    max-width: 200px; 
+    margin: 10px auto; 
+}
+
+nav {
+    background-color: #64a08c;
+    display: block;
+    text-align: center;
+    height: auto; 
+}
+
+nav ul {
+    display: block; 
+    padding: 0; 
+    margin: 0; 
+}
+
+nav ul li {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+nav ul li a {
+    display: block; 
+    padding: 10px;
+    background-color: #e5ec55;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+main {
+    padding: 0 2%;
+    min-height: auto;
+}
+
+main h1 {
+    font-size: 2rem; 
+    margin: 20px 0; 
+    padding: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    padding: 10px; 
+    text-align: left; 
+}
+
+/*  Calendar */
+.cld h2 {
+    font-size: 1.5rem; 
+    padding: 20px;
+}
+
+#calendar {
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.calendar-header {
+    padding: 5px;
+}
+
+.calendar-header button {
+    padding: 5px;
+    font-size: 0.8rem; 
+}
+
+#calendar-grid {
+    gap: 1px;
+    padding: 2px;
+}
+
+.day {
+    padding: 4px;
+    font-size: 0.8rem; 
+}
+
+/* Sticky Notes */
+.st {
+    display: block;
+}
+
+.sticky-note1,
+.sticky-note2,
+.sticky-note3 {
+    width: 90%; 
+    margin: 20px auto; 
+    padding: 10px; 
+    font-size: 14px; 
+}
+
+.sticky-note3 p {
+    padding: 10px; 
+}
+
+.sticky-note3 button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%; 
+    max-width: none; 
+    margin: 0; 
+}
+
+/* Quote Box */
+.quote-box {
+    width: 90%; 
+    margin: 20px auto; 
+    padding: 20px; 
+    font-size: 16px; 
+}
+
+#new-quote {
+    font-size: 12px; 
+}
+
+/* Planner*/
+.planner-container {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px auto;
+}
+
+.planner {
+    width: 90%; 
+    margin: 0 auto;
+    padding: 15px;
+    min-width: auto;
+}
+
+.planner h2 {
+    font-size: 1.3rem;
+}
+
+.planner button {
+    padding: 15px;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+}
+
+.column div {
+    margin: 10px;
+    padding: 5px;
+}
+
+.column div textarea,
+.column div input,
+.column div select {
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Task List */
+.list {
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 15px;
+    min-width: auto;
+}
+
+.task-item {
+    padding: 10px;
+}
+
+.task-header {
+    font-size: 1rem;
+}
+
+.task-actions button {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.go-to-calendar-button {
+    margin-left: auto;
+    margin-right: auto;
+}

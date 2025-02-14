@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="As a student, the most challenging thing is organizing your time and meeting due dates. This website is designed to help you plan your study time and manage tasks effectively.">
+        <meta name="author" content="Silvia Ferran">
+        <title> WDD 131 - GoalGetter - Silvia Ferran </title>
+        <link rel="stylesheet" href="styles/ggproject_large.css">
+        <link rel="stylesheet" href="styles/ggproject_mobile.css" media="(max-width: 768px)">
+        <script src="scripts/ggproject.js" defer></script>
+        <script src="scripts/ggplanner.js" defer></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.jpg" alt="GoalGetter Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planner.html">Planner</a></li>
+                    <li><a href="motivational.html">Motivation</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Welcome to GoalGetter!</h1>
+            <p>
+                Feeling overwhelmed by deadlines and disorganized study sessions? 
+                GoalGetter is your ultimate study planner, helping you track progress, 
+                manage tasks, and stay motivated with daily inspiration. Plan smarter, 
+                reduce stress, and boost productivity with interactive tools designed for 
+                students like you. Take charge of your academic success—start using GoalGetter today!
+            </p>
+            <fieldset class="cld">
+                <section id="calendar">
+                    <h2>Task & Study Tracker!</h2>
+                    <div class="calendar-header">
+                        <button id="prev-month">←</button>
+                        <h2 id="month-year">Loading...</h2>
+                        <button id="next-month">→</button>
+                    </div>
+                    <div id="calendar-grid"></div>
+                </section>
+            </fieldset>
+            <fieldset class="st"> 
+                <div class="sticky-note1">
+                    <h3>Welcome</h3>
+                    <p>💡 You’ve taken the first step toward smarter studying and better organization!</p> 
+                    <p>💡 With GoalGetter, you can plan your study sessions, track your progress, and stay motivated every day.</p>
+                    <p>💡 No more missed deadlines or last-minute cramming—just a clear path to success. Let’s set your goals and make them happen! </p>
+                </div>
+                <div class="sticky-note2">
+                    <h3>How It Works</h3>
+                    <p>1️⃣ Choose a Date: Select the day you want to schedule your task.</p>
+                    <p>2️⃣ Add a Task: Enter the details of what you need to accomplish.</p>
+                    <p>3️⃣ Set a Due Date: Keep track of deadlines by assigning a completion date.</p>
+                    <p>4️⃣ Prioritize Your Task: Mark tasks by priority level to stay organized.</p>
+                    <p>5️⃣ Track Your Progress: Monitor your achievements and stay on top of your goals.</p>
+                </div>
+                <div class="sticky-note3">
+                    <h3>Feeling Overwhelmed?</h3>
+                    <p>
+                        Receive a daily booster of inspiration to stay focused and motivated! Track progress, conquer 
+                        challenges, and keep pushing forward. Your goals are within reach—stay inspired and make every
+                        study session count!
+                    </p>
+                    <a href="motivational.html">
+                        <button id="go-to-motivation">Boost My Productivity!</button>
+                    </a>
+                </div>
+            </fieldset>                
+        </main>
+        
+        <footer>
+            <fieldset class="foot">
+                <p>
+                    ©<span id="current-year"></span> GoalGetter. All Rights Reserved
+                </p>
+                <p class="last-modified"></p>
+            </fieldset>          
+        </footer>
+    </body>
+</html>

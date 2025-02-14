@@ -1,0 +1,479 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Exo 2", serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+.logo {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+
+main h1 {
+    margin: 40px 0;
+    text-align: center;
+    padding: 30px;
+    color: #0d4e38;
+}
+
+
+nav {
+    background-color: #64a08c;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    list-style: none;
+    padding: 15px;
+
+}
+
+nav ul li a {
+    padding: 10px;
+    background-color: #e5ec55;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+p {
+    text-align: justify;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/*CALENDAR */
+
+.cld h2 {
+    text-align: center;
+    padding: 30px;
+    color: #0d4e38;
+}
+
+#calendar {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: #9bd6eb;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #8aba81;
+}
+
+.calendar-header button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    background-color: #ccc;
+}
+
+#calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    padding: 5px;
+}
+
+.day {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.day.header {
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.date-number {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tasks-container a {
+    display: block;
+    padding: 3px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+
+
+/* STICKY NOTE */
+
+.st {
+    background-color: rgb(247, 246, 205);
+    display: flex;
+}
+
+.sticky-note1 {
+    width: 350px;
+    background-color: #f6f697;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.sticky-note1 p {
+    padding: 2px;
+}
+
+.sticky-note2 {
+    width: 350px;
+    background-color: #caeda3;
+    /* Light yellow */
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.sticky-note2 p {
+    padding: 2px;
+}
+
+
+.sticky-note3 {
+    width: 350px;
+    background-color: #9bd6eb;
+    /* Light yellow */
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.sticky-note3 p {
+    padding: 20px;
+}
+
+.sticky-note3 button {
+    border: none;
+    background-image: linear-gradient(rgb(89, 147, 126), rgb(17, 103, 71));
+    color: white;
+    border-radius: 6px;
+    padding: 20px;
+    width: 90%;
+    max-width: 250px;
+    box-shadow: 1px 1px 4px rgb(174, 173, 173);
+    font-size: 1.2rem;
+
+}
+
+.sticky-note::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transform: rotate(-3deg);
+}
+
+#new-quote {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #ffcc00;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#new-quote:hover {
+    background-color: #ffdb4d;
+}
+
+/* BOX QUOTE */
+
+.quote-box {
+    width: 80%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#quote-text,
+#quote-image {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#quote-image {
+    width: 100%;
+    max-width: 400px;
+    /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    /* Optional for a rounded look */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 0 2%;
+}
+
+.foot {
+    background-color: rgb(195, 225, 244);
+}
+
+.foot p {
+    text-align: center;
+    padding: .5px;
+}
+
+/*PLANNER */
+
+.planner-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.planner {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f0ecec;
+}
+
+.planner h2 {
+    text-align: center;
+    color: #0d4e38;
+}
+
+.planner button {
+    border: none;
+    background-image: linear-gradient(rgb(89, 147, 126), rgb(17, 103, 71));
+    color: white;
+    border-radius: 6px;
+    padding: 20px;
+    width: 90%;
+    max-width: 250px;
+    box-shadow: 1px 1px 4px rgb(174, 173, 173);
+    font-size: 1.2rem;
+    margin-left: 60px;
+}
+
+.planner-container h3 {
+    text-align: center;
+    color: #0d4e38;
+    font-size: 25px;
+}
+
+.column div {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #333;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.column label {
+    padding: 30px;
+    color: #070707;
+}
+
+.column div textarea,
+input,
+option {
+    height: 44px;
+    width: 90%;
+    align-items: center;
+    border: 2px solid green;
+    font-size: 20px;
+}
+
+.column select {
+    height: 44px;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    border: 2px solid green;
+}
+
+
+/* TASK LIST */
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+    margin-top: 5px;
+}
+
+.task-label {
+    padding: 3px 6px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.list{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f0ecec;
+
+}
+
+.task-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid green;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.checkbox-label input {
+    margin-right: 10px;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.task-actions button {
+    flex: 1;
+    min-width: 80px;
+    height: 35px;
+    border: none;
+    background: linear-gradient(to bottom, #4a90e2, #357abd);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.task-actions button:hover {
+    background: linear-gradient(to bottom, #357abd, #2a5d9e);
+}
+
+.go-to-calendar-button {
+    display: inline-block; 
+    padding: 20px 20px;
+    background:linear-gradient(rgb(89, 147, 126), rgb(17, 103, 71));
+    color: white; 
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-top: 20px;
+    margin-left: 120px ;
+}
+
+/* MOTIVATIONAL HTML */
+
+.motivational h2{
+    text-align: center;
+    font-size: 40px;
+}
