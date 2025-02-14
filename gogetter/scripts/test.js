@@ -18,13 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Tasks from localStorage:", tasks);
 
     function displayTasks() {
-        const taskListContainer = document.getElementById("task-list");
-
-        if (!taskListContainer) {
-            console.error("Element with ID 'task-list' not found.");
-            return;
-        }
-
         console.log("Displaying tasks");
         taskListContainer.innerHTML = "";
 
@@ -62,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.warn(`Tasks for ${date} is not an array:`, tasks[date]);
             }
         }
-
         document.querySelectorAll(".complete-task").forEach(checkbox => {
             checkbox.addEventListener("change", function () {
                 const date = this.getAttribute("data-date");
@@ -142,30 +134,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const editIndex = submitButton.getAttribute("data-edit-index");
 
             if (editDate !== null && editIndex !== null) {
-                tasks[editDate][editIndex] = { 
-                    taskName, 
-                    startDate, 
-                    dueDate, 
-                    taskDetails, 
-                    priority: taskPriority, 
-                    completed: tasks[editDate][editIndex].completed 
-                };
-
+                tasks[editDate][editIndex] = { taskName, startDate, dueDate, taskDetails, priority: taskPriority, completed: tasks[editDate][editIndex].completed };
                 submitButton.textContent = "Add Task";
                 submitButton.removeAttribute("data-edit-date");
                 submitButton.removeAttribute("data-edit-index");
             } else {
+
                 if (!tasks[startDate]) {
                     tasks[startDate] = [];
                 }
-                tasks[startDate].push({ 
-                    taskName, 
-                    startDate, 
-                    dueDate, 
-                    taskDetails, 
-                    priority: taskPriority, 
-                    completed: false 
-                });
+                tasks[startDate].push({ taskName, startDate, dueDate, taskDetails, priority: taskPriority, completed: false });
             }
 
             localStorage.setItem("tasks", JSON.stringify(tasks));

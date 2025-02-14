@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function generateCalendar(month, year) {
         if (!calendarContainer) {
-            console.error("Calendar container not found!");
             return;
         }
 
