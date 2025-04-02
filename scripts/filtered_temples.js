@@ -1,3 +1,7 @@
+/*ghgj
+kjghkj*/
+
+
 const currentYear = new Date().getFullYear();
 document.getElementById('current-year').textContent = currentYear;
 const currentDate = new Date();
